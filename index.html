@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tesla - Electric Vehicles & Clean Energy</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <nav class="navbar">
+    <div class="nav-container">
+        <div class="logo">
+            <img src="images/Tesla logo.jpg" alt="Tesla Logo" class="logo-img">
+        </div>
+        <ul class="nav-menu">
+            <li><a href="#home">Vehicles</a></li>
+            <li><a href="#models">Models</a></li>
+            <li><a href="#solar">Energy</a></li>
+            <li><a href="#shop">Shop</a></li>
+            <li><a href="#account" class="account-link">Account</a></li>
+        </ul>
+    </div>
+</nav>
+
+    <!-- Hero and carousel-->
+    <section class="hero-carousel" id="home">
+        <div class="carousel-container">
+            <div class="carousel-slide active" style="background-image: url('images/Tesla\ front\ lighting\ view.jpg');">
+                    
+                    
+                    <div class="slide-buttons">
+                        <button class="btn btn-primary">Order Now</button>
+                         <button class="btn btn-secondary">Learn More</button>
+                    </div>
+                </div>
+            </div>
+
+                <div class="carousel-slide" style="background-image: url('images/Tesla Mode 3.jpg');">
+                    <h1>Model 3</h1>
+                    <p>Affordable Excellence</p>
+                    <div class="slide-buttons">
+                        <button class="btn btn-primary">Order Now</button>
+                        <button class="btn btn-secondary">Learn More</button>
+                    </div>
+                </div>
+            </div>
+
+                <div class="carousel-slide" style="background-image: url('images/Tesla Model X.jpg');">
+                    <h1>Model X</h1>
+                    <p>Falcon Wing Innovation</p>
+                    <div class="slide-buttons">
+                        <button class="btn btn-primary">Order Now</button>
+                        <button class="btn btn-secondary">Learn More</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="carousel-slide" style="background-image: url('images/Tesla Model Y.jpg');">
+                    <h1>Model Y</h1>
+                    <p>The Future is Electric</p>
+                    <div class="slide-buttons">
+                        <button class="btn btn-primary">Order Now</button>
+                        <button class="btn btn-secondary">Learn More</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Carousel AI assisted-->
+        <div class="carousel-controls">
+            <button class="control-btn prev" onclick="changeSlide(-1)">❮</button>
+            <div class="carousel-dots">
+                <span class="dot active" onclick="currentSlide(0)"></span>
+                <span class="dot" onclick="currentSlide(1)"></span>
+                <span class="dot" onclick="currentSlide(2)"></span>
+                <span class="dot" onclick="currentSlide(3)"></span>
+            </div>
+            <button class="control-btn next" onclick="changeSlide(1)">❯</button>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section class="features">
+        <h2>Experience Tesla Technology</h2>
+        <div class="features-grid">
+            <div class="feature-card">
+                <img src="images/Tesla dashboard interior.webp" alt="Tesla Dashboard">
+                <h3>Advanced Dashboard</h3>
+                <p>15-inch touchscreen with intuitive controls and real-time vehicle information</p>
+            </div>
+            <div class="feature-card">
+                <img src="images/Telsa Premium Interior.jpg" alt="Tesla Interior">
+                <h3>Premium Interior</h3>
+                <p>Minimalist design with premium materials and cutting-edge technology</p>
+            </div>
+            <div class="feature-card">
+                <img src="images/Tesla Falcon wings.jpg" alt="Tesla Model X">
+                <h3>Falcon Wing Doors</h3>
+                <p>Unique design that opens upward for easy access and stunning presence</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Models Section (containeer)-->
+    <section class="models" id="models">
+        <h2>Our Electric Vehicles</h2>
+        <div class="models-container">
+            <!-- Model S -->
+            <div class="model-card">
+                <div class="model-image">
+                    <img src="images/Tesla model S.jpg" alt="Tesla Model S">
+                </div>
+                <h3>Model S</h3>
+                <p class="model-spec">0-60 mph in 1.99s</p>
+                <p>The quickest production car in the world</p>
+                <a href="#" class="model-link">Explore</a>
+            </div>
+
+            <!-- Model 3 -->
+            <div class="model-card">
+                <div class="model-image">
+                    <img src="images/Tesla Model 3.jpg" alt="Tesla Model 3">
+                </div>
+                <h3>Model 3</h3>
+                <p class="model-spec">272 mile range</p>
+                <p>Affordable electric car for everyone</p>
+                <a href="#" class="model-link">Explore</a>
+            </div>
+
+            <!-- Model X -->
+            <div class="model-card">
+                <div class="model-image">
+                    <img src="images/Tesla Model X.jpg" alt="Tesla Model X">
+                </div>
+                <h3>Model X</h3>
+                <p class="model-spec">348 mile range</p>
+                <p>The world's fastest production SUV</p>
+                <a href="#" class="model-link">Explore</a>
+            </div>
+
+            <!-- Model Y -->
+            <div class="model-card">
+                <div class="model-image">
+                    <img src="images/Tesla Model Y.jpg" alt="Tesla Model Y">
+                </div>
+                <h3>Model Y</h3>
+                <p class="model-spec">330 mile range</p>
+                <p>Compact SUV with amazing performance</p>
+                <a href="#" class="model-link">Explore</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Solar Panels Section (container)-->
+    <section class="solar-panels" id="solar">
+        <div class="solar-content">
+            <h2>Solar Panels</h2>
+            <p>Generate your own clean energy and reduce your electricity bills</p>
+            <div class="solar-grid">
+                <div class="solar-card">
+                    <img src="images/Tesla roof durable.webp" alt="Solar Panels Installation">
+                    <h3>Professional Installation</h3>
+                    <p>Expert installation by certified Tesla technicians</p>
+                </div>
+                <div class="solar-card">
+                    <img src="images/Telsa roof modern design.jpg" alt="Solar Roof">
+                    <h3>Seamless Integration</h3>
+                    <p>Integrated with your home's electrical system</p>
+                </div>
+            </div>
+            <button class="btn btn-primary">Get Solar Quote</button>
+        </div>
+    </section>
+
+    <!-- Solar Roofs Section (container)-->
+    <section class="solar-roofs">
+        <div class="solar-roof-content">
+            <h2>Solar Roof</h2>
+            <p>Beautiful solar tiles that look like premium roofing</p>
+            <div class="solar-roof-grid">
+                <div class="solar-roof-card">
+                    <img src="images/tesla-solar-home-roof.jpg" alt="Solar Roof Home">
+                    <h3>Modern Design</h3>
+                    <p>Sleek design that enhances your home's aesthetic</p>
+                </div>
+                <div class="solar-roof-card">
+                    <img src="images/Tesla solar roofs.jpg" alt="Solar Roof Installation">
+                    <h3>Durable & Efficient</h3>
+                    <p>Built to last with superior energy generation</p>
+                </div>
+            </div>
+            <button class="btn btn-primary">Learn About Solar Roof</button>
+        </div>
+    </section>
+
+    <!-- Energy Storage Section -->
+    <section class="energy-storage">
+        <h2>Powerwall & Megapack</h2>
+        <p>Store your solar energy for use anytime</p>
+        <div class="storage-grid">
+            <div class="storage-card">
+                <img src="images/Tesla powerwalll.png" alt="Powerwall">
+                <h3>Powerwall</h3>
+                <p>Home battery storage system</p>
+            </div>
+            <div class="storage-card">
+                <img src="images/Tesla megapack.webp" alt="Megapack">
+                <h3>Megapack</h3>
+                <p>Grid-scale energy storage</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Shop Section -->
+    <section class="shop" id="shop">
+        <h2>Tesla Shop</h2>
+        <p>Accessories and merchandise for Tesla owners</p>
+        <div class="shop-items">
+            <img src="images/tesla-apparel.jpg" alt="Tesla Apparel" class="shop-item-image">
+            <div class="shop-item">
+                <div class="shop-image">Merchandise</div>
+                <h3>Tesla Apparel</h3>
+                <p>Official Tesla branded clothing</p>
+            </div>
+            <div class="shop-item">
+                <div class="shop-image">Accessories</div>
+                <h3>Vehicle Accessories</h3>
+                <p>Premium Tesla accessories</p>
+            </div>
+            <div class="shop-item">
+                <div class="shop-image">Parts</div>
+                <h3>Replacement Parts</h3>
+                <p>Genuine Tesla parts</p>
+            </div>
+        </div>
+        <button class="btn btn-primary">Visit Shop</button>
+    </section>
+
+    <!-- Account Section -->
+    <section class="account" id="account">
+        <h2>Tesla Account</h2>
+        <p>Manage your Tesla experience</p>
+        <div class="account-features">
+            <div class="account-feature">
+                <h3>Owner Portal</h3>
+                <p>Access your vehicle information and service records</p>
+            </div>
+            <div class="account-feature">
+                <h3>Mobile App</h3>
+                <p>Control your vehicle from your smartphone</p>
+            </div>
+            <div class="account-feature">
+                <h3>Charging Network</h3>
+                <p>Find and reserve Superchargers worldwide</p>
+            </div>
+        </div>
+        <button class="btn btn-primary">Sign In</button>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-section">
+                <h4>Tesla</h4>
+                <ul>
+                    <li><a href="#">About Tesla</a></li>
+                    <li><a href="#">Careers</a></li>
+                    <li><a href="#">Press</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h4>Vehicles</h4>
+                <ul>
+                    <li><a href="#">Model S</a></li>
+                    <li><a href="#">Model 3</a></li>
+                    <li><a href="#">Model X</a></li>
+                    <li><a href="#">Model Y</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h4>Energy</h4>
+                <ul>
+                    <li><a href="#">Solar Panels</a></li>
+                    <li><a href="#">Solar Roof</a></li>
+                    <li><a href="#">Powerwall</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h4>Support</h4>
+                <ul>
+                    <li><a href="#">Help</a></li>
+                    <li><a href="#">Contact</a></li>
+                    <li><a href="#">Service</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2026 Tefo Komane- iHUB Full Stack Web Dev Trainee (Telsa Landing Page). All Right Reserved.
+        </div>
+    </footer>
+
+</body>
+</html>
